@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Afiliación</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="css\styles.css">
+    <link rel="stylesheet" href="css\adminlte.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="title">
+            <h2>
+                <span style="color:rgba(0, 0, 0, 0.637)">Web</span><span style="color:rgba(0, 0, 0, 0.363)">Developer</span><span>
+            </h2>
+        </div>
+
+        <div class="form-container">
+            <div class=" card-body ">
+                <h6 class="card-subtitle mb-2 text-muted">Formulario de afiliación</h6>
+                <form id="form" action="received.html" method="GET">     
+                       
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" id="name" name="name" aria-describedby="nameHelp" placeholder="Nombre completo">
+                        <div class="input-group-append">
+                            <span class="input-group-text" style = "background-color: white;"><i class="bi bi-person-fill"></i></span>
+        </div>
+    </div>
+    <div class="input-group mb-3">
+        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Email">
+        <div class="input-group-append">
+            <span class="input-group-text" style="background-color: white;">
+                                <i class="bi bi-envelope-fill"></i>
+                            </span>
+        </div>
+    </div>
+    <div class="input-group mb-3">
+        <input type="number" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Número de telefono">
+        <div class="input-group-append">
+            <span class="input-group-text" style="background-color: white;">
+                                <i class="bi bi-telephone-fill"></i>
+                            </span>
+        </div>
+    </div>
+
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="" id="gustos">
+        <div class="input-group-append">
+            <button class="btn btn-outline-success" type="button" id="button-gustos">Gustos</button>
+        </div>
+    </div>
+
+    <div class="col-md-3 col-sm-6 col-12">
+        <div class="info-box" style="width: 25rem;">
+            <span class="info-box-icon bg-success"><i class="ion-ios-flag-outline"></i></span>
+
+            <div class="info-box-content">
+                <table id="table" class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">Gusto</th>
+                            <th scope="col">%</th>
+                            <th scope="col">Edit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="row" hidden>
+                            <td>
+                                <input id="gustoValue" name="gustoValue" style="max-width:150px;" disabled/>
+                            </td>
+                            <td>
+                                <input type="number" value="0" id="percentajeValue" name="percentaje" style="max-width:50px;" disabled />
+                            </td>
+                            <td>
+                                <a id="edit">Edit</a>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+            <!-- /.info-box-content -->
+        </div>
+        <!-- /.info-box -->
+    </div>
+
+    <div id="advertencia" class="input-group mb-3">
+        <p>Pulse aceptar para guardar los cambios o cancelar para anularlos</p>
+    </div>
+
+    <div id="botones" class="input-group mb-3" style="margin-left: 30%;">
+        <button type="submit" class="btn btn-outline-secondary">Enviar</button>
+        <button type="reset" style="margin-left: 20px;" class="btn btn-outline-danger">Anular</button>
+    </div>
+
+    <a href="https://sites.google.com/view/dweb1-uis/home">Ir a site de Programación Web</a>
+    </form>
+    </div>
+    </div>
+    </div>
+    <script type="text/javascript" src="css\js\edicion.js">
+    </script>
+
+</body>
+
+</html>
